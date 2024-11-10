@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Month Select */
+.month-select {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.month-select label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.month-select select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.search-box button:hover {
+  background-color: #2980b9;
+}
+
+/* Statistics Box */
+.statistics-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-box div {
+  text-align: center;
+}
+
+.statistics-box .stat-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.statistics-box .stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Transactions Table */
+.transactions-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.transactions-table th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.transactions-table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.transactions-table td {
+  background-color: #fff;
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.transactions-table tr:hover {
+  background-color: #f1c40f;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color: #2980b9;
+}
+
+/* Chart Styles */
+.chart {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .month-select,
+  .search-box {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .statistics-box {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .statistics-box div {
+      margin-bottom: 15px;
+  }
+
+  .transactions-table {
+      margin-top: 30px;
+  }
+
+  .transactions-table table {
+      width: 100%;
+      font-size: 0.9rem;
+  }
+}
